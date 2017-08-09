@@ -16,4 +16,6 @@ local check_auth = require "check_auth"
 middlewares:use(check_router)
 middlewares:use(check_auth)
 
-middlewares:init()
+
+local appName = "test"
+middlewares:init(appName)

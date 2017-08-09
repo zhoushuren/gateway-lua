@@ -32,7 +32,6 @@ function _M:bodyFilter()
     end
 end
 
-
 function _M:content()
     for k, v in pairs(self.middlewares) do
         if v.content then v:content() end

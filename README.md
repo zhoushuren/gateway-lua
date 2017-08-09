@@ -25,3 +25,5 @@ init部分的代码在启动nginx的时候通过 init_by_lua_file 执行 主要�
 
 middleware部分则是一个请求执行一次
 
+所有的中间件请放在middlewares目录里 且至少必须实现 init 接口 init接受一个形参 arg
+
